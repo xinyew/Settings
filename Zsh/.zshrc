@@ -9,6 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=/home/xinyew/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/usr/local/go/bin
 
@@ -122,8 +123,26 @@ alias clear='clear && clear'
 alias ls='exa'
 alias ll='exa -l --icons'
 
+alias sm22='/mnt/d/OneDrive/education/Summer22'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export DISPLAY=172.27.224.1:0.0
+export DISPLAY=172.30.144.1:0.0
 export LIBGL_ALWAYS_INDIRECT=1
 export deno='/home/xinyew/.deno/bin/deno'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/xinyew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/xinyew/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/xinyew/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/xinyew/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
