@@ -1,0 +1,120 @@
+{
+    //
+    // start of editor settings
+    //
+    // Controls if quick suggestions should show up while typing
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+
+     // Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+    "editor.acceptSuggestionOnCommitCharacter": true,
+
+    // Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions. The value 'smart' means only accept a suggestion with Enter when it makes a textual change
+    "editor.acceptSuggestionOnEnter": "on",
+
+    // Controls the delay in ms after which quick suggestions will show up.
+    "editor.quickSuggestionsDelay": 10,
+
+    // Controls if suggestions should automatically show up when typing trigger characters
+    "editor.suggestOnTriggerCharacters": true,
+
+    // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+    "editor.tabCompletion": "on",
+
+    // Controls whether sorting favours words that appear close to the cursor
+    "editor.suggest.localityBonus": true,
+
+    // Controls how suggestions are pre-selected when showing the suggest list
+    "editor.suggestSelection": "first",
+
+    // Enable word based suggestions
+    "editor.wordBasedSuggestions": true,
+
+    // Enable parameter hints
+    "editor.parameterHints.enabled": true,
+
+    // File related
+    "files.autoSave": "onFocusChange",
+
+    
+    "workbench.colorTheme": "Monokai Pro",
+    "editor.fontSize": 15,
+    "editor.fontLigatures": true,
+    "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+    "terminal.integrated.fontSize": 14,
+    "debug.console.fontSize": 13,
+    "scm.inputFontSize": 14,
+    "editor.fontWeight": "250",
+    "editor.lineHeight": 1.8,
+    "terminal.integrated.fontWeight": "100",
+    "terminal.integrated.lineHeight": 1.1,
+    "prettier.eslintIntegration": true,
+
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "terminal.integrated.fontFamily": "JetBrainsMono NF",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.fontFamily": "JetBrains Mono",
+    "glassit.alpha": 255,
+    //
+    // start of vim settings
+    //
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+        {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": true,
+        "<C-v>": false,
+        "<C-c>": false,
+        "<C-x>": false,
+        "<C-s>": false
+    },
+    "redhat.telemetry.enabled": true,
+    "workbench.startupEditor": "none",
+    //
+    // end of vim settings
+    //
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.colorCustomizations" : {
+        "terminal.background" : "#2d2a2e",
+        "titleBar.activeBackground": "#2d2a2e",
+        "activityBar.background": "#2d2a2e",
+        "panel.background": "#2d2a2e",
+        
+    },
+    "workbench.editor.untitled.hint": "hidden"
+}
